@@ -1,0 +1,26 @@
+{
+  "name": "product-recommendation-function",
+  "version": "1.0.0",
+  "description": "Simple product recommendation system for e-commerce",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gcloud functions deploy productRecommendation --runtime nodejs18 --trigger-http --allow-unauthenticated --source ."
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.0.0",
+    "express": "^4.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "recommendation",
+    "ecommerce",
+    "cloud-function",
+    "google-cloud"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
